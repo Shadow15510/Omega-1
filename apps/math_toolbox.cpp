@@ -555,8 +555,7 @@ const ToolboxMessageTree Electromagnetism[] = {
   ToolboxMessageTree::Leaf(I18n::Message::Vacuum_permittivityTag, I18n::Message::Vacuum_permittivity, false, I18n::Message::Vacuum_permittivity),
   ToolboxMessageTree::Leaf(I18n::Message::Vacuum_permeabilityTag, I18n::Message::Vacuum_permeability, false, I18n::Message::Vacuum_permeability),
   ToolboxMessageTree::Leaf(I18n::Message::PlanckTag, I18n::Message::Planck, false, I18n::Message::Planck),
-  ToolboxMessageTree::Leaf(I18n::Message::ElementalChargeTag, I18n::Message::ElementalCharge, false, I18n::Message::ElementalCharge),
-  ToolboxMessageTree::Leaf(I18n::Message::FaradayConstantTag, I18n::Message::FaradayConstant, false, I18n::Message::FaradayConstant),
+  ToolboxMessageTree::Leaf(I18n::Message::ElementalChargeTag, I18n::Message::ElementalCharge, false, I18n::Message::ElementalCharge)
 };
 
 const ToolboxMessageTree Gravitation[] = {
@@ -576,21 +575,6 @@ const ToolboxMessageTree AstronomicalMass[] = {
   ToolboxMessageTree::Leaf(I18n::Message::MoonMassTag, I18n::Message::MoonMass, false, I18n::Message::MoonMass),
 };
 
-const ToolboxMessageTree Radiuses[] = {
-  ToolboxMessageTree::Leaf(I18n::Message::SunMassTag, I18n::Message::SunRadius, false, I18n::Message::SunRadius),
-  ToolboxMessageTree::Leaf(I18n::Message::EarthMassTag, I18n::Message::EarthRadius, false, I18n::Message::EarthRadius),
-  ToolboxMessageTree::Leaf(I18n::Message::MoonMassTag, I18n::Message::MoonRadius, false, I18n::Message::MoonRadius),
-};
-
-const ToolboxMessageTree Distances[] = {
-  ToolboxMessageTree::Leaf(I18n::Message::EarthMoonDistanceTag, I18n::Message::EarthMoonDistance, false, I18n::Message::EarthMoonDistance),
-    ToolboxMessageTree::Leaf(I18n::Message::EarthSunDistanceTag, I18n::Message::EarthSunDistance, false, I18n::Message::EarthSunDistance),
-};
-
-const ToolboxMessageTree Lenght[] = {
-  ToolboxMessageTree::Node(I18n::Message::Radiuses, Radiuses),
-  ToolboxMessageTree::Node(I18n::Message::Distances, Distances),
-};
 
 const ToolboxMessageTree Mass[] = {
   ToolboxMessageTree::Node(I18n::Message::ParticleMass, ParticleMass),
@@ -603,7 +587,6 @@ const ToolboxMessageTree Physics[] = {
   ToolboxMessageTree::Node(I18n::Message::Electromagnetism, Electromagnetism),
   ToolboxMessageTree::Node(I18n::Message::Gravitation, Gravitation),
   ToolboxMessageTree::Node(I18n::Message::Mass, Mass),
-  ToolboxMessageTree::Node(I18n::Message::Lenght, Lenght)
 };
 
 const ToolboxMessageTree menu[] = {
