@@ -60,6 +60,20 @@ Also, you can change the number of processes that run in parallel during the bui
 </details>
 
 <details>
+  
+  <summary><b>Omega-Theme</b></summary>
+    To add a theme to Omega you need to add the OMEGA_THEME=omega_theme compilation field set like this :
+    ```
+    make PLATFORM=n0110 USERNAME="{Your name, max 15 characters}" OMEGA_THEME=omega_theme -j
+    ```
+    The list of currently available theme is :
+    * Omega Dark Theme : omega_dark
+    * Omega Light Theme ( Default ) : omega_light
+    * Epsilon Dark Theme : epsilon_dark
+    * Epsilon Light Theme : epsilon_light
+  </details>
+
+<details>
   <summary><b>Bin files</b></summary>
   
 These can be used to distribute Omega (so that it can be flashed by anyone with [Webdfu_Numworks](https://ti-planet.github.io/webdfu_numworks/)).
