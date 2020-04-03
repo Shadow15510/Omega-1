@@ -53,6 +53,7 @@ Event getEvent(int * timeout);
 
 ShiftAlphaStatus shiftAlphaStatus();
 void setShiftAlphaStatus(ShiftAlphaStatus s);
+void removeShift();
 bool isShiftActive();
 bool isAlphaActive();
 bool isLockActive();
@@ -119,6 +120,8 @@ constexpr Event EXE = Event::PlainKey(Keyboard::Key::EXE);
 
 // Shift
 
+constexpr Event ShiftHome  = Event::ShiftKey(Keyboard::Key::Home);
+
 constexpr Event ShiftLeft  = Event::ShiftKey(Keyboard::Key::Left);
 constexpr Event ShiftRight = Event::ShiftKey(Keyboard::Key::Right);
 constexpr Event ShiftUp    = Event::ShiftKey(Keyboard::Key::Up);
@@ -181,6 +184,11 @@ constexpr Event ShiftTwo = Event::ShiftKey(Keyboard::Key::Two);
 constexpr Event ShiftThree = Event::ShiftKey(Keyboard::Key::Three);
 
 // Alpha
+
+constexpr Event AlphaLeft  = Event::AlphaKey(Keyboard::Key::Left);
+constexpr Event AlphaRight = Event::AlphaKey(Keyboard::Key::Right);
+constexpr Event AlphaUp    = Event::AlphaKey(Keyboard::Key::Up);
+constexpr Event AlphaDown  = Event::AlphaKey(Keyboard::Key::Down);
 
 constexpr Event Colon = Event::AlphaKey(Keyboard::Key::XNT);
 constexpr Event SemiColon = Event::AlphaKey(Keyboard::Key::Var);
